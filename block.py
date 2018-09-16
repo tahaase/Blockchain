@@ -5,10 +5,11 @@ Created on Sat Sep 15 18:21:44 2018
 
 @author: Thomas
 """
-
+# imports
 from datetime import datetime
 from hashlib import sha256
 
+#Block class - Initialized with transaction and previous hash information. 
 class Block:
   def __init__(self, transactions, previous_hash, nonce = 0):
     self.timestamp = datetime.now()
